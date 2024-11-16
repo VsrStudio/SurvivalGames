@@ -1,7 +1,7 @@
 ---
 name: SurvivalGame
 version: 1.0.0
-main: LuizMinecrapt\skywars\Main
+main: VsrStudio\sg\Main
 author: VsrStudio
 api: 5.0.0
 description: Survival Game VsrStudio

@@ -444,7 +444,7 @@ class Game
 				{
 					if($player->isOnline())
 					{
-						Scoreboard::getInstance()->new($player, "SkyBlock", TF::BOLD . TF::GOLD . "SKY" . TF::YELLOW . "WARS");
+						Scoreboard::getInstance()->new($player, "SkyBlock", TF::BOLD . TF::GOLD . "SURVIVAL" . TF::YELLOW . "GAME");
 						Scoreboard::getInstance()->setLine($player, 0, "      ");
 						Scoreboard::getInstance()->setLine($player, 1, "Players: " .  TF::AQUA . count($this->playersLeft) . TF::RESET . "/" . TF::AQUA . "12");
 						Scoreboard::getInstance()->setLine($player, 2, "     ");

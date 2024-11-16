@@ -11,10 +11,18 @@
 - And More.
 
 ## Screenshot
-
+**/survivalgame** To OpenUI
 ![SurvivalGame Screenshot](images/result.png)
 
 ## Commands
 
-### `/survivalgame help`
+`/survivalgame help`
 Displays a list of commands and instructions on how to use the plugin.
+`/survivalgame add
+/survivalgame reload
+/survivalgame list
+/survivalgame setlobby
+/survivalgame edit <arenaname>",					
+/survivalgame search <arenaname>",
+/survivalgame generate <arenaname>",
+/survivalgame remove <arenaname>`

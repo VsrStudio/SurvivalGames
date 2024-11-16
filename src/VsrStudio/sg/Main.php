@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LuizMinecrapt\skywars;
+namespace VsrStudio\sg;
 
 use pocketmine\Server;
 use pocketmine\command\Command;
@@ -227,7 +227,7 @@ class Main extends PluginBase
 
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
 	{
-		$listCmd = ["/skywars add", 
+		$listCmd = ["/survivalgame add", 
 					"/survivalgame reload",
 					"/survivalgame list",
 					"/survivalgame setlobby",

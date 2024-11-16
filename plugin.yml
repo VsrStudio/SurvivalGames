@@ -1,0 +1,15 @@
+---
+name: Skywars
+version: 0.1.0
+main: LuizMinecrapt\skywars\Main
+api: 5.0.0
+description: Skywars
+
+commands:
+  skywars:
+    permission: 'skywars.permission'
+
+permissions:
+  skywars.permission:
+    default: true
+...

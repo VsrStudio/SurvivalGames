@@ -1,6 +1,6 @@
 <?php
 
-namespace LuizMinecrapt\skywars\manager;
+namespace Vsrstudio\sg\manager;
 
 use pocketmine\Server;
 use pocketmine\block\VanillaBlocks;
@@ -19,10 +19,10 @@ use pocketmine\world\sound\PopSound;
 use pocketmine\world\sound\PotionSplashSound;
 use pocketmine\world\sound\RedstonePowerOnSound;
 use pocketmine\world\sound\XpCollectSound;
-use LuizMinecrapt\skywars\Main;
-use LuizMinecrapt\skywars\manager\SkywarsManager;
-use LuizMinecrapt\skywars\utils\Scoreboard;
-use LuizMinecrapt\skywars\task\SkywarsTask;
+use VsrStudio\sg\Main;
+use VsrStudio\sg\manager\SkywarsManager;
+use VsrStudio\sg\utils\Scoreboard;
+use VsrStudio\sg\task\SkywarsTask;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use FilesystemIterator;

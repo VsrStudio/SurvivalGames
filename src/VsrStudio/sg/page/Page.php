@@ -1,12 +1,12 @@
 <?php
 
-namespace LuizMinecrapt\skywars\page;
+namespace Vsrstudio\sg\page;
 
 use pocketmine\Server;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as TF;
 use jojoe77777\FormAPI\{CustomForm, Form, ModalForm, SimpleForm};
-use LuizMinecrapt\skywars\Main;
+use VsrStudio\sg\Main;
 
 class Page
 {

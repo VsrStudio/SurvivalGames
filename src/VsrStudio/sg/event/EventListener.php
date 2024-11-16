@@ -1,6 +1,6 @@
 <?php
 
-namespace LuizMinecrapt\skywars\event;
+namespace VsrStudio\sg\event;
 
 use pocketmine\Server;
 use pocketmine\block\Chest;
@@ -26,8 +26,8 @@ use pocketmine\player\GameMode;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\math\Vector3;
 use pocketmine\world\Position;
-use LuizMinecrapt\skywars\Main;
-use LuizMinecrapt\skywars\task\ItemHubTask;
+use VsrStudio\sg\Main;
+use VsrStudio\sg\task\ItemHubTask;
 
 class EventListener implements Listener
 {

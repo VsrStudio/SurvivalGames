@@ -1,6 +1,6 @@
 <?php
 
-namespace LuizMinecrapt\skywars\utils;
+namespace Vsrstudio\sg\utils;
 
 use pocketmine\player\Player;
 use pocketmine\network\mcpe\protocol\{RemoveObjectivePacket, SetDisplayObjectivePacket, SetScorePacket, types\ScorePacketEntry};

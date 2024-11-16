@@ -228,17 +228,17 @@ class Main extends PluginBase
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
 	{
 		$listCmd = ["/skywars add", 
-					"/skywars reload",
-					"/skywars list",
-					"/skywars setlobby",
-					"/skywars edit <arenaname>",					
-					"/skywars search <arenaname>",
-					"/skywars generate <arenaname>",
-					"/skywars remove <arenaname>",
+					"/survivalgame reload",
+					"/survivalgame list",
+					"/survivalgame setlobby",
+					"/survivalgame edit <arenaname>",					
+					"/survivalgame search <arenaname>",
+					"/survivalgame generate <arenaname>",
+					"/survivalgame remove <arenaname>",
 					];
 		switch($cmd->getName())
 		{
-			case "skywars":				
+			case "survivalgame":				
 				$name = $sender->getName();
 				if(isset($args[0]))
 				{
@@ -266,7 +266,7 @@ class Main extends PluginBase
 							{
 								if(empty($args[1]))
 								{
-									$sender->sendMessage(Main::TAG . "/skywars edit <arenaname>");
+									$sender->sendMessage(Main::TAG . "/survivalgame edit <arenaname>");
 									return true;
 								}
 								if($this->getGame($args[1]) == null)
@@ -310,7 +310,7 @@ class Main extends PluginBase
 							{
 								if(empty($args[1]))
 								{
-									$sender->sendMessage(Main::TAG . "/skywars search <arenaname>");
+									$sender->sendMessage(Main::TAG . "/survivalgame search <arenaname>");
 									return true;
 								}
 								if($this->getGame($args[1]) == null)
@@ -319,7 +319,7 @@ class Main extends PluginBase
 									return true;
 								}
 								$game = $this->getGame($args[1]);
-								$sender->sendMessage(Main::TAG . "Skywars name: $args[1]");
+								$sender->sendMessage(Main::TAG . "survivalgame name: $args[1]");
 								$sender->sendMessage(Main::TAG . "Map: " . $game->getMap());
 								$sender->sendMessage(Main::TAG . "Max player: 12");
 								$sender->sendMessage(Main::TAG . "Hub: " . $game->getHubWorld());
@@ -339,7 +339,7 @@ class Main extends PluginBase
 							{
 								if(empty($args[1]))
 								{
-									$sender->sendMessage(Main::TAG . "/skywars generate <arenaname>");
+									$sender->sendMessage(Main::TAG . "/survivalgame generate <arenaname>");
 									return true;
 								}
 								if($this->getGame($args[1]) == null)
@@ -359,7 +359,7 @@ class Main extends PluginBase
 							{
 								if(empty($args[1]))
 								{
-									$sender->sendMessage(Main::TAG . "/skywars remove <arenaname>");
+									$sender->sendMessage(Main::TAG . "/survivalgame remove <arenaname>");
 									return true;
 								}
 								if($this->getGame("$args[1]") == null)

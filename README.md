@@ -18,11 +18,11 @@
 
 `/survivalgame help`
 Displays a list of commands and instructions on how to use the plugin.
-`/survivalgame add
+*/survivalgame add
 /survivalgame reload
 /survivalgame list
 /survivalgame setlobby
-/survivalgame edit <arenaname>",					
-/survivalgame search <arenaname>",
-/survivalgame generate <arenaname>",
-/survivalgame remove <arenaname>`
+/survivalgame edit <arenaname>		
+/survivalgame search <arenaname>
+/survivalgame generate <arenaname>
+/survivalgame remove <arenaname>*

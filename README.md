@@ -18,5 +18,3 @@
 
 ### `/survivalgame help`
 Displays a list of commands and instructions on how to use the plugin.
-
-@vsrstudio

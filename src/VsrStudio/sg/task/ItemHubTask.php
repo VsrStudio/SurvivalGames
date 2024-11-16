@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsrstudio\sg\task;
+namespace VsrStudio\sg\task;
 use pocketmine\player\Player;
 use pocketmine\scheduler\Task;
 use pocketmine\utils\TextFormat as TF;

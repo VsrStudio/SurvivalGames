@@ -1,16 +1,16 @@
 ---
 name: SurvivalGame
-version: 0.1.0
+version: 1.0.0
 main: LuizMinecrapt\skywars\Main
 author: VsrStudio
 api: 5.0.0
 description: Survival Game VsrStudio
 
 commands:
-  skywars:
-    permission: 'skywars.permission'
+  survivalgame:
+    permission: 'survivalgame.permission'
 
 permissions:
-  skywars.permission:
+  survivalgame.permission:
     default: true
 ...

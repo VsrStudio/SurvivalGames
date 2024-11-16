@@ -1,9 +1,10 @@
 ---
-name: Skywars
+name: SurvivalGame
 version: 0.1.0
 main: LuizMinecrapt\skywars\Main
+author: VsrStudio
 api: 5.0.0
-description: Skywars
+description: Survival Game VsrStudio
 
 commands:
   skywars:

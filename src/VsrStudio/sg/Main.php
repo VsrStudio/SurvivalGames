@@ -11,11 +11,11 @@ use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
-use LuizMinecrapt\skywars\event\EventListener;
-use LuizMinecrapt\skywars\task\SkywarsTask;
-use LuizMinecrapt\skywars\manager\Game;
-use LuizMinecrapt\skywars\manager\Player as PlayerData;
-use LuizMinecrapt\skywars\page\Page;
+use VsrStudio\sg\event\EventListener;
+use VsrStudio\sg\task\SkywarsTask;
+use VsrStudio\sg\manager\Game;
+use VsrStudio\sg\manager\Player as PlayerData;
+use VsrStudio\sg\page\Page;
 use LuizMinecrapt\FriendUI\FriendUI;
 
 class Main extends PluginBase
@@ -39,7 +39,7 @@ class Main extends PluginBase
 	private static Main $instance;	
 
 	/** @static string */
-	public const TAG = TF::GRAY."[SkyWars] " .TF::RESET;
+	public const TAG = TF::GRAY."[SurvivalGame] " .TF::RESET;
 
 	/** @static int */
 	public const CONFIG_VERSION = 3;

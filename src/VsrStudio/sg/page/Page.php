@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsrstudio\sg\page;
+namespace VsrStudio\sg\page;
 
 use pocketmine\Server;
 use pocketmine\player\Player;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsrstudio\sg\utils;
+namespace VsrStudio\sg\utils;
 
 use pocketmine\player\Player;
 use pocketmine\network\mcpe\protocol\{RemoveObjectivePacket, SetDisplayObjectivePacket, SetScorePacket, types\ScorePacketEntry};

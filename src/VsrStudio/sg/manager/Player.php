@@ -1,10 +1,10 @@
 <?php
 
-namespace LuizMinecrapt\skywars\manager;
+namespace Vsrstudio\sg\manager;
 
 use pocketmine\Server;
 use pocketmine\utils\Config;
-use LuizMinecrapt\skywars\Main;
+use VsrStudio\sg\Main;
 
 class Player
 {

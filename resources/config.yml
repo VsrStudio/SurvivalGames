@@ -1,0 +1,13 @@
+# Skywars configuration
+Config-Version: 3
+
+ServerIp: your.server.ip
+
+# Put player name that allowed to use add,remove command
+Name: []
+
+# Lobby
+Lobby: world
+x: 256
+h: 60
+z: 256

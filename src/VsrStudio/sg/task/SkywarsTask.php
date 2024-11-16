@@ -1,9 +1,9 @@
 <?php
 
-namespace LuizMinecrapt\skywars\task;
+namespace Vsrstudio\sg\task;
 
 use pocketmine\scheduler\Task;
-use LuizMinecrapt\skywars\manager\Game;
+use VsrStudio\sg\manager\Game;
 
 class SkywarsTask extends Task
 {

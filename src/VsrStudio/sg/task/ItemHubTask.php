@@ -1,10 +1,10 @@
 <?php
 
-namespace LuizMinecrapt\skywars\task;
+namespace Vsrstudio\sg\task;
 use pocketmine\player\Player;
 use pocketmine\scheduler\Task;
 use pocketmine\utils\TextFormat as TF;
-use LuizMinecrapt\skywars\Main;
+use VsrStudio\sg\Main;
 
 class ItemHubTask extends Task
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsrstudio\sg\task;
+namespace VsrStudio\sg\task;
 
 use pocketmine\scheduler\Task;
 use VsrStudio\sg\manager\Game;

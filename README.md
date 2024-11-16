@@ -1,5 +1,5 @@
 # SurvivalGame Plugin
-![Icon](https://raw.githubusercontent.com/VsrStudio/SurvivalGames/refs/heads/main/images/icon.png?token=GHSAT0AAAAAACZOQ7R5O5F2Y3ULX4WFKVJOZZYI6XQ)
+![Icon](images/icon.png)
 
 **SurvivalGame** is a plugin for Minecraft Pocket Edition using PocketMine-MP that lets you play in survival mode with exciting features. Players can join the survival game, fight other players, and try to survive until the end.
 

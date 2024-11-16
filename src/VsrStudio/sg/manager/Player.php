@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsrstudio\sg\manager;
+namespace VsrStudio\sg\manager;
 
 use pocketmine\Server;
 use pocketmine\utils\Config;

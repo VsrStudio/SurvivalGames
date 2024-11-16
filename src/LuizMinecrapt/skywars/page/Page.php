@@ -50,8 +50,8 @@ class Page
 				break;
 			}
 		});
-		$form->setTitle(TF::BOLD.TF::GOLD."SKY".TF::AQUA . "WARS");
-		$form->setContent("Hello " . TF::YELLOW . $player->getName() . TF::WHITE . ", Welcome" .TF::BLUE . " to " .TF::WHITE . "SkyWars, the place of action-packed adventures" . TF::GOLD . " and " .TF::WHITE . "excitement! Come " . TF::BLUE . " on" .TF::WHITE . "," . TF::BLUE . " join in" .TF::WHITE . TF::GOLD . " and ". TF::WHITE . " experience the thrill" . TF::BLUE . " of " .TF::WHITE . "soaring high" . TF::GOLD . " and " .TF::WHITE . "collecting" . TF::BLUE . " as " .TF::WHITE . "many points" . TF::BLUE . " as ". TF::WHITE . "you can. Enjoy your time" . TF::GOLD . " and " .TF::WHITE . " may you become the ruler" . TF::BLUE . " of ". TF::WHITE . "the skies!");
+		$form->setTitle(TF::BOLD.TF::GOLD."SURVIVAL".TF::AQUA . "GAME");
+		$form->setContent("Hello " . TF::YELLOW . $player->getName() . TF::WHITE . ", Welcome" .TF::BLUE . " to " .TF::WHITE . "SurvivalGame, the place of action-packed adventures" . TF::GOLD . " and " .TF::WHITE . "excitement! Come " . TF::BLUE . " on" .TF::WHITE . "," . TF::BLUE . " join in" .TF::WHITE . TF::GOLD . " and ". TF::WHITE . " experience the thrill" . TF::BLUE . " of " .TF::WHITE . "soaring high" . TF::GOLD . " and " .TF::WHITE . "collecting" . TF::BLUE . " as " .TF::WHITE . "many points" . TF::BLUE . " as ". TF::WHITE . "you can. Enjoy your time" . TF::GOLD . " and " .TF::WHITE . " may you become the ruler" . TF::BLUE . " of ". TF::WHITE . "the skies!");
 		$form->addButton(TF::AQUA."Leaderboard\n".TF::RESET.TF::WHITE."»» Play and survive in the sky",0, "textures/ui/world_glyph_color_2x_black_outline");
 		$form->addButton(TF::AQUA."Play\n".TF::RESET.TF::WHITE."»» Play and survive in the sky",0, "textures/items/iron_axe");
 		$form->addButton(TF:: AQUA . "Friend\n" . TF::WHITE. "»» Play with your friends" , 0, "textures/ui/FriendsIcon");
@@ -68,7 +68,7 @@ class Page
 			}
 			$this->mainPage($player);		
 		});
-		$form->setTitle(TF::BOLD.TF::GOLD."SKY".TF::AQUA . "WARS");
+		$form->setTitle(TF::BOLD.TF::GOLD."SURVIVAL".TF::AQUA . "GAME");
 		$playersData = Main::getInstance()->getPlayersData();
 		$arrayPoints = array();
 		foreach ($playersData as $data) {						
@@ -83,7 +83,7 @@ class Page
 		$form->addLabel("> Your Points: " . TF::AQUA . $myData->getPoint());
 		$form->addLabel("> Your Kills: " . TF::GOLD . $myData->getKill());
 		$form->addLabel("  ");
-		$form->addLabel("== [SKYWARS LEADERBOARD] ==");
+		$form->addLabel("== [SURVIVALGAME LEADERBOARD] ==");
 		$form->addLabel("Top Points:");
 		if(isset($sortedKeys[0]))
 		{
@@ -142,7 +142,7 @@ class Page
 				break;
 			}
 		});
-		$form->setTitle(TF::BOLD.TF::GOLD."SKY".TF::AQUA . "WARS");
+		$form->setTitle(TF::BOLD.TF::GOLD."SURVIVAL".TF::AQUA . "GAME");
 		$form->addButton(TF::AQUA."Join Random\n".TF::RESET.TF::WHITE."»» Join random and survive in the sky",0, "textures/items/totem");
 		//$form->addButton(TF::AQUA."Join\n".TF::RESET.TF::WHITE."»» Join random and survive in the sky",0, "textures/items/compass_item");
 		$form->addButton(TF::RED."Back\n", 0, "textures/items/compass_item");
@@ -188,7 +188,7 @@ class Page
 				}
 			}
 		});
-		$form->setTitle(TF::BOLD.TF::YELLOW."SKYLAND");
+		$form->setTitle(TF::BOLD.TF::YELLOW."SURVIVALGAME");
 		foreach(Main::getInstance()->getGames() as $game)
 		{
 			if($game->getPhase() == "OFFLINE")
@@ -236,7 +236,7 @@ class Page
 				return;
 			}
 		});
-		$form->setTitle(TF::BOLD.TF::GOLD."SKY".TF::AQUA . "WARS");
+		$form->setTitle(TF::BOLD.TF::GOLD."SURVIVAL".TF::AQUA . "GAME");
 		$getFriend = Main::getInstance()->getFriend()->getPlayer($player->getName());		
 		if($getFriend->isFriendEmpty() === true)
 		{
@@ -298,7 +298,7 @@ class Page
 				break;
 			}
 		});
-		$form->setTitle(TF::BOLD.TF::GOLD."SKY".TF::AQUA . "WARS");
+		$form->setTitle(TF::BOLD.TF::GOLD."SURVIVAL".TF::AQUA . "GAME");
 		$fgame = Main::getInstance()->getPlayer($target);
 		if($fgame !== null)
 		{
@@ -315,7 +315,7 @@ class Page
 		} else
 		{	
 			$form->addButton(TF::RED . "-- Not Playing --");
-		}			
+		}
 		$form->addButton(TF::RED."Back\n", 0, "textures/items/compass_item");
 		$form->sendToPlayer($player);
 	}
@@ -365,7 +365,7 @@ class Page
 			{
 				$player->teleport(Server::getInstance()->getWorldManager()->getWorldByName($data[3])->getSafeSpawn());
 			}			
-			$player->sendMessage(Main::TAG . "Skywars name: $data[0]");
+			$player->sendMessage(Main::TAG . "SurvivalGame name: $data[0]");
 			$player->sendMessage(Main::TAG . "Map: $data[1]");
 			$player->sendMessage(Main::TAG . "Max player: 12");
 			$player->sendMessage(Main::TAG . "Max chest: 41");
@@ -373,8 +373,8 @@ class Page
 			$player->sendMessage(Main::TAG . "World name: $data[3]");
 			$player->sendMessage(Main::TAG . "Successfully created arena with the name $data[0]");
 		});
-		$form->setTitle(TF::BOLD.TF::GOLD."SKY".TF::AQUA . "WARS");
-		$form->addInput("Skywars name:");
+		$form->setTitle(TF::BOLD.TF::GOLD."SURVIVAL".TF::AQUA . "GAME");
+		$form->addInput("SurvivalGame name:");
 		$form->addInput("Map:");		
 		$form->addInput("Hub name:");
 		$form->addInput("World name:");

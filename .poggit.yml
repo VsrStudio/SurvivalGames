@@ -5,4 +5,5 @@ branches:
 projects:
   SurvivalGames:
     path: ""
+    icon: icon.png
 ...
